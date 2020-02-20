@@ -1,0 +1,18 @@
+<div class='banner'>
+  <h1>Tonight Scarlett</h1>
+  <%= link_to new_cocktail_path do %>
+    <i class="fas fa-cocktail"></i>
+  <% end %>
+</div>
+
+<div class="container">
+  <div class="cocktail-cards">
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail_path(cocktail), class: 'card-hover' do %>
+        <div class="cocktail-card">
+        <p><%= cocktail.name %></p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

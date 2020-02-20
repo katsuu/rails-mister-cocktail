@@ -1,1 +1,72 @@
 // Specific CSS for your home-page
+
+.container {
+  margin: 60px 100px;
+}
+
+body {
+  background-color: white;
+}
+
+footer {
+  height: 120px;
+  background-color: rgb(209, 161, 171);
+  padding: 30px;
+  p {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    i {
+      color: white;
+      font-size: 25px;
+      padding: 0 10px;
+    }
+    i:hover {
+      font-size: 30px;
+      transition: 0.5s;
+    }
+  }
+}
+
+.cocktail-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  a:hover {
+    color: red;
+    transform: scale(1.02);
+  }
+}
+
+.cocktail-card {
+  background-image: linear-gradient(rgba(243, 188, 201, 0.2), rgba(243, 188, 201, 0.4)), url('https://source.unsplash.com/random/?cocktail');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.card-hover {
+  &:hover {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  transition: 0.5s;
+  text-align: center;
+}

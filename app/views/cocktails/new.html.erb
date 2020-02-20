@@ -1,0 +1,10 @@
+<div class="form-container background-pink">
+  <%= link_to cocktails_path do %>
+    <i class="fas fa-arrow-alt-circle-left back-btn"></i>
+  <% end %>
+  <h1>Name Your Poison 😈</h1>
+  <%= simple_form_for(@cocktail) do |f| %>
+    <%= f.input :name, label: false %>
+    <%= f.submit "Submit Cocktail", class: "btn-red" %>
+  <% end %>
+</div>
