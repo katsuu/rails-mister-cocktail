@@ -14,7 +14,7 @@
 <div class="cocktail-cards">
   <% @cocktails.each do |cocktail| %>
     <%= link_to cocktail_path(cocktail), class: 'card-hover' do %>
-      <% path = cocktail.photo.attached? ? cocktail.photo.service_url : URI.encode('https://images.unsplash.com/photo-1527271982979-83fea3eb3582?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80') %>
+      <% path = cocktail.photo.attached? ? cocktail.photo.service_url : 'https://kitt.lewagon.com/placeholder/cities/random' %>
       <div class="cocktail-card" style="background-image: linear-gradient(rgba(243, 188, 201, 0.3), rgba(0, 0, 0, 0.4)), url('<%= path %>'); background-size: cover; background-position: center;">
         <p><%= cocktail.name %></p>
       </div>
