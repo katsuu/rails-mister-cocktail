@@ -9,7 +9,7 @@
       <h1><%= @cocktail.name %></h1>
 
       <div class="ingredients">
-        <h2>How to make a <%= @cocktail.name %>...</h2>
+        <h3>How to make a <%= @cocktail.name %>...</h3>
         <hr>
         <% @cocktail.doses.each do |dose| %>
           <div class="ingredient-item">
@@ -23,7 +23,7 @@
     </div>
 
     <button class='add-ingredient-btn'>
-      <%= link_to "Hmm.. this is missing something...", new_cocktail_dose_path(@cocktail) %>
+      <%= link_to "Hmm, something is missing!", new_cocktail_dose_path(@cocktail) %>
     </button>
   </div>
 </div>

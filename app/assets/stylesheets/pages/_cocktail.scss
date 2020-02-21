@@ -24,13 +24,14 @@
 .cocktail {
   height: 80vh;
   margin-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   h1 {
     color: red;
+    font-family: 'Pacifico', cursive;
   }
 }
 
@@ -43,13 +44,19 @@
   box-shadow: .5px .5px 2px grey;
   color: white;
   font-size: 20px;
+  transition: transform 1s;
   a {
     color: white;
     text-decoration: none;
   }
-  a:hover {
-    font-weight: bolder;
+  &:hover {
+    // transform: scale(1.1);
+    transform: rotate(360deg);
   }
+}
+
+.ingredients {
+  margin-top: 30px;
 }
 
 .ingredient-item {
