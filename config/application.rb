@@ -31,5 +31,9 @@ module RailsMisterCocktail
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Dont precopile for heroku
+    config.assets.initialize_on_precompile = false
+
   end
 end
