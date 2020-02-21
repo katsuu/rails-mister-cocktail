@@ -11,7 +11,7 @@ body {
 
 footer {
   height: 120px;
-  background-color: rgb(209, 161, 171);
+  background-color: rgb(50,50,50);
   padding: 30px;
   p {
     color: white;
@@ -36,8 +36,8 @@ footer {
 
 .cocktail-cards {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: stretch;
   a {
     color: white;
     text-decoration: none;
@@ -49,34 +49,26 @@ footer {
     color: white;
     transform: scale(1.05);
     text-decoration: none;
-    // transition: 0.5s;
+    border-radius: 5px;
   }
 }
 
-.cocktail-card {
+.card-hover {
   background-image: linear-gradient(rgba(243, 188, 201, 0.3), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/random/?cocktail');
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 300px;
+  flex-grow: 1;
+  min-width: 33%;
   box-shadow: 1px 1px 5px grey;
-  border-radius: 5px;
+}
+
+.cocktail-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  height: 100%;
+  border: 20px solid transparent;
+  box-shadow: inset 0px 0px 0px 3px white;
+  box-sizing: border-box;
 }
-
-// .card-hover {
-//   &:hover {
-//     color: white;
-//     font-size: 30px;
-//     text-decoration: none;
-//   }
-//   color: white;
-//   text-decoration: none;
-//   display: inline-block;
-//   font-size: 35px;
-//   transition: 0.5s;
-//   text-align: center;
-// }

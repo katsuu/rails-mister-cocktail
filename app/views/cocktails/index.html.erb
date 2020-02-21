@@ -11,14 +11,14 @@
   </p>
 </div>
 
-<div class="container">
-  <div class="cocktail-cards">
-    <% @cocktails.each do |cocktail| %>
-      <%= link_to cocktail_path(cocktail), class: 'card-hover' do %>
-        <div class="cocktail-card">
+
+<div class="cocktail-cards">
+  <% @cocktails.each do |cocktail| %>
+    <%= link_to cocktail_path(cocktail), class: 'card-hover' do %>
+      <div class="cocktail-card">
         <p><%= cocktail.name %></p>
-        </div>
-      <% end %>
+      </div>
     <% end %>
-  </div>
+  <% end %>
 </div>
+

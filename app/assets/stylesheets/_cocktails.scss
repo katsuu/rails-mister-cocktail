@@ -16,7 +16,7 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    color: red;
+    color: #8EC0FC;
     font-size: 60px;
     &:hover {
       font-size: 70px;
@@ -40,7 +40,7 @@
 }
 
 .add-ingredient-btn {
-  background-color: blue;
+  background-color: rgb(243, 188, 201);
   border-radius: 50%;
   height: 200px;
   width: 200px;
@@ -67,9 +67,9 @@
   display: flex;
   justify-content: space-between;
   a {
-    color: blue;
+    color: rgb(243, 188, 201);
   }
   a:hover {
-    color: red;
+    color: #8EC0FC;
   }
 }
