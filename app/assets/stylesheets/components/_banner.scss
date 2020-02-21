@@ -1,7 +1,7 @@
 .banner {
   height: 450px;
   background-position: left;
-  background-image: url('banner.jpeg');
+  background-image: asset_url('banner.jpeg');
   display: flex;
   justify-content: center;
   align-items: center;
