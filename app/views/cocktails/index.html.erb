@@ -1,8 +1,11 @@
 <div class='banner'>
   <h1>Tonight Jacqueline</h1>
-  <%= link_to new_cocktail_path do %>
-    <i class="fas fa-cocktail"></i>
-  <% end %>
+  <div class="add-cocktail">
+    <%= link_to new_cocktail_path do %>
+      <i class="fas fa-plus"></i>
+      <i class="fas fa-cocktail"></i>
+    <% end %>
+  </div>
   <p>
     <span id="banner-typed-text"></span>
   </p>

@@ -10,6 +10,9 @@ require 'json'
 
 puts 'Cleaning the database...'
 
+Dose.destroy_all
+Ingredient.destroy_all
+
 puts 'Database cleaned!'
 puts 'Adding ingredients...'
 
@@ -17,7 +20,7 @@ url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 file = open(url).read
 result = JSON.parse(file)
 
-result["drinks"].each do |ingredient|
+result["drinks"].sort_by { |drink| drink["strIngredient1"] }.each do |ingredient|
   Ingredient.create(name: ingredient["strIngredient1"])
 end
 

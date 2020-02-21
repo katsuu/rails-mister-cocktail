@@ -19,17 +19,23 @@
   }
   a {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
   }
-  i {
-    font-size: 50px;
-    color: rgb(233, 63, 51);
-  }
-  i:hover {
-    font-size: 55px;
-    color: rgb(233, 63, 51);
-    transition: .5s;
+  .add-cocktail {
+    a {
+      transition: transform .5s;
+      font-size: 35px;
+      color: #FFFFFF;
+    }
+    a:hover {
+      transform: scale(1.05);
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    i.fa-plus {
+      font-size: 20px;
+    }
   }
   p {
     color: white;
