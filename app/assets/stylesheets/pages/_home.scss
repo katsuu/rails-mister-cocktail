@@ -15,9 +15,10 @@ footer {
   padding: 30px;
   p {
     color: white;
-    font-weight: bolder;
-    font-size: 20px;
+    font-weight: lighter;
+    font-size: 18px;
     text-align: center;
+    font-family: 'Playfair Display', serif;
   }
   .icons {
     display: flex;
@@ -39,7 +40,7 @@ footer {
   flex-wrap: wrap;
   align-items: stretch;
   a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     display: inline-block;
     font-size: 30px;
@@ -54,7 +55,7 @@ footer {
 }
 
 .card-hover {
-  background-image: linear-gradient(rgba(243, 188, 201, 0.3), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/random/?cocktail');
+  // background-image: linear-gradient(rgba(243, 188, 201, 0.3), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/random/?cocktail');
   background-size: cover;
   background-position: center;
   height: 300px;

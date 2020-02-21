@@ -2,10 +2,10 @@
   <%= link_to cocktail_path(@cocktail) do %>
     <i class="fas fa-arrow-alt-circle-left back-btn"></i>
   <% end %>
-  <h1>What do we need for your <%= @cocktail.name %>?</h1>
+  <h3>What ingredients do we need for your <%= @cocktail.name %>? 🍹</h3>
   <%= simple_form_for [@cocktail, @dose] do |f| %>
     <%= f.input :description, label: false  %>
     <%= f.association :ingredient, label: false  %>
-    <%= f.submit "Submit Dose", class: "btn-red" %>
+    <%= f.submit "Here we go!", class: "btn-blue" %>
   <% end %>
 </div>

@@ -1,12 +1,12 @@
-.btn-red {
+.btn-blue {
   background-color: #8EC0FC;
   padding: 12px;
   border-radius: 10px;
   font-size: 18px;
   color: white;
+  transition: transform 1s;
   &:hover {
-    font-size: 20px;
-    transition: 0.5s;
+    transform: scale(1.08);
   }
 }
 
@@ -15,25 +15,28 @@
 }
 
 .form-container {
-  margin: 110px 200px;
+  margin: 110px 150px;
   height: 75%;
   padding: 100px 200px;
   border-radius: 20px;
   text-align: center;
   box-shadow: 1px 1px 5px grey;
   position: relative;
-  h1 {
-    color: white
+  h3 {
+    color: #FFFFFF;
   }
   a {
     position: absolute;
     top: -100px;
-    left: -150px;
+    left: -120px;
     color: #8EC0FC;
     font-size: 70px;
+    transition: transform 1s;
   }
   a:hover {
-    font-size: 80px;
-    transition: .5s;
+    transform: scale(1.08);
+  }
+  i {
+    color: rgb(243, 188, 201);
   }
 }

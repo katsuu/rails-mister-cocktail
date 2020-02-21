@@ -12,6 +12,7 @@ puts 'Cleaning the database...'
 
 Dose.destroy_all
 Ingredient.destroy_all
+Cocktail.destroy_all
 
 puts 'Database cleaned!'
 puts 'Adding ingredients...'

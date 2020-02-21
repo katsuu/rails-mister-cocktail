@@ -15,7 +15,7 @@
 <div class="cocktail-cards">
   <% @cocktails.each do |cocktail| %>
     <%= link_to cocktail_path(cocktail), class: 'card-hover' do %>
-      <div class="cocktail-card">
+      <div class="cocktail-card" style="background-image: linear-gradient(rgba(243, 188, 201, 0.3), rgba(0, 0, 0, 0.4)), url('<%= cl_image_path cocktail.photo.key, crop: :fill %>'); background-size: cover; background-position: center;">
         <p><%= cocktail.name %></p>
       </div>
     <% end %>

@@ -2,9 +2,13 @@
   <%= link_to root_path do %>
     <i class="fas fa-arrow-alt-circle-left back-btn"></i>
   <% end %>
-  <h1>Name Your Poison 😈</h1>
+
   <%= simple_form_for(@cocktail) do |f| %>
+    <h3>Name Your Poison 😈</h3>
     <%= f.input :name, label: false %>
-    <%= f.submit "Submit Cocktail", class: "btn-red" %>
+    <h3>Tell us more... 👀</h3>
+    <%= f.input :description, label: false %>
+    <%= f.input :photo, as: :file, label:false, class: "submit-blue" %>
+    <%= f.submit "Submit Cocktail", class: "btn-blue" %>
   <% end %>
 </div>
