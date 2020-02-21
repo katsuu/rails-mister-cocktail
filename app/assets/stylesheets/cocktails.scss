@@ -16,7 +16,7 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    color: $red;
+    color: red;
     font-size: 60px;
     &:hover {
       font-size: 70px;
@@ -40,7 +40,7 @@
 }
 
 .add-ingredient-btn {
-  background-color: $pink;
+  background-color: blue;
   border-radius: 50%;
   height: 200px;
   width: 200px;
@@ -67,9 +67,9 @@
   display: flex;
   justify-content: space-between;
   a {
-    color: $pink;
+    color: blue;
   }
   a:hover {
-    color: $red;
+    color: red;
   }
 }
